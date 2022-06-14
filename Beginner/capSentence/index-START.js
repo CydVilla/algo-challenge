@@ -7,9 +7,10 @@ return the equivalent of the sentence when capitalised. E.g
 
 
 
-function capSentence(text) {
-   // Code goes here
-}
+const capSentence = (text) => text.split(" ").map(el => el[0].toUpperCase()+el.substring(1).toLowerCase()).join(" ")
+
+
+// 0(N)
 
 
 

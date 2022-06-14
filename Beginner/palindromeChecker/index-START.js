@@ -7,7 +7,14 @@ e.g palindromeChecker('racecar') // will return true
 
 
 function palindromeChecker(text) {
-    v// Code goes here
+    const lowerCase = text.toLowerCase()
+    const length = text.length
+    for (let i = 0; i < length / 2; i++) {
+      if (lowerCase[i] !== lowerCase[length - 1 - i ]) {
+      return false 
+    }
+    }
+    return true
 }
 
 
